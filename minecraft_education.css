@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    font-family: Roc-Grotesk, sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    z-index: 3;
+    background: #283a2c;
+}
+header{
+    background: #283a2c;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+#logo{
+    float: left;
+    width: 200px;
+    padding: 10px 0 10px 30px;
+}
+nav{
+    float: left;
+    margin-left: 40px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    padding-top: 35px;
+    position: relative;
+    margin-right: 60px;
+}
+nav a{
+    color: #daddc5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+nav a:hover{
+    color: #f0efeb;
+}
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #f0efeb;
+    position: absolute;
+    top: 55px;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+    width: 100%;
+}
+h1{
+    position: absolute;
+}
+#main_image{
+    width: 100%;
+    margin: 0;
+}
+.overlay h1{
+    font-size: 3em;
+    font-family: Poleno, fantasy;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
+}
+.overlay p{
+    font-size: 1.6em;
+    font-family: Roc-Grotesk, sans-serif;
+    color: #daddc5;
+    font-weight: 600;
+    margin-top: 160px;
+    text-align: center;
+    line-height: 30px;
+}
+.background_image{
+    margin-top: 80px;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50%, 50%;
+    background-image: url(students_playing.jpg);
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+    align-items: center;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer{
+    background: #85523f;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+#footer_logo{
+    text-align: center;
+    display: block;
+    margin: 15px auto 10px;
+    width: 200px;
+}
+.footer p{
+    color: #ffffff;
+    font-size: 1.3em;
+    line-height: 28px;
+    margin-left: 300px;
+}
+.bold{
+    font-weight: 600;
+    color: #daddc5;
+}
+#footer1{
+    float: left;
+}
+#footer2{
+    margin-top: 30px;
+    margin-right: 300px;
+    text-align: right;
+}
